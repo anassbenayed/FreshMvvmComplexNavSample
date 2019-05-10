@@ -1,0 +1,2 @@
+# FreshMvvmComplexNavSample
+Demo property of @rid00z FreshMvvm author. This demo demonstrates the use of Complex Navigation Senarios in FreshMvvm using two navigation containers with two navigation stacks LoginStack and MainAppStack using the public method CoreMethods of the FreshBasePageModel inherited page models to switch between navigation between a page model (LoginStack) and a master detail page (MainAppStack)
