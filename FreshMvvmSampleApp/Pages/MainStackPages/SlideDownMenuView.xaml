@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<t:SlideMenuView xmlns="http://xamarin.com/schemas/2014/forms" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+        xmlns:t="clr-namespace:SlideOverKit" 
+        x:Class="FreshMvvmComplexNav.SlideDownMenuView">
+    <Grid Padding="10, 100, 10, 10" x:Name="mainGrid" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout Orientation="Vertical" Grid.Column="0" Grid.Row="0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ShowQuotes}"></TapGestureRecognizer>
+            </StackLayout.GestureRecognizers>
+            <Image Source="document.png" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Quotes" TextColor="Black" XAlign="Center" WidthRequest="100" HeightRequest="50" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ShowContacts}"></TapGestureRecognizer>
+            </StackLayout.GestureRecognizers>
+            <Image Source="contacts.png" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Contacts" XAlign="Center" WidthRequest="100" HeightRequest="50"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Grid.Column="0" Grid.Row="1">            
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ShowContactUs}"></TapGestureRecognizer>
+            </StackLayout.GestureRecognizers>
+			<Image Source="Phone.png" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Contact Us" XAlign="Center" WidthRequest="100" HeightRequest="50"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="1">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Logout}"></TapGestureRecognizer>
+            </StackLayout.GestureRecognizers>
+			<Image Source="Logout.png" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Logout" XAlign="Center" WidthRequest="100" HeightRequest="50"/>
+        </StackLayout>
+    </Grid>
+</t:SlideMenuView>

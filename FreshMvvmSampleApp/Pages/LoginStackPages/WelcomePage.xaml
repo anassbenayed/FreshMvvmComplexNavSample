@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FreshMvvmComplexNav.WelcomePage">
+    <ContentPage.Content>
+		<StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="350" >
+			<Label Text="Welcome to our beautiful app" HorizontalTextAlignment="Center" ></Label>
+			<Button Text="Continue" BackgroundColor="Silver" TextColor="White" BorderRadius="5"
+					Command="{Binding ContinueCommand}"
+				></Button>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>
